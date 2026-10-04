@@ -122,7 +122,8 @@ svg text{font-family:inherit}
 .rctl input{flex:1;accent-color:var(--acc)}
 .rctl .ib{width:34px;height:34px}
 .rctl .tl{font-size:12.5px;min-width:76px;text-align:right}
-.leg{position:absolute;top:10px;left:10px;z-index:900;background:rgba(12,18,30,.75);border-radius:12px;padding:6px 10px;font-size:11px}
+.mapwrap.popon .leg,.mapwrap.popon .mtools{opacity:0;pointer-events:none}
+.leg{transition:opacity .2s;position:absolute;top:10px;left:10px;z-index:900;background:rgba(12,18,30,.75);border-radius:12px;padding:6px 10px;font-size:11px}
 .leg i{display:block;width:120px;height:6px;border-radius:3px;margin:4px 0 2px;background:linear-gradient(90deg,#88ddee,#0099cc,#0077aa,#ffee00,#ffaa00,#ff4400,#c10000,#ff00ff)}
 .leaflet-container{background:#0d1320;font:inherit}
 .leaflet-control-attribution{font-size:9px!important;background:rgba(0,0,0,.45)!important;color:#ccc!important}
@@ -205,7 +206,8 @@ nav.tabs button.on svg{color:var(--acc)}
 .mtools button.on{background:var(--acc);font-weight:600}
 .mtools .ib{width:36px;height:36px;background:rgba(12,18,30,.8)}
 .pop b{font-size:15px}.pop .t{font-size:30px;font-weight:300;line-height:1.1}.pop .btn{padding:7px 10px;font-size:13px;margin-top:8px;width:100%}
-.leaflet-popup-content{margin:12px 14px;min-width:190px}
+.leaflet-popup-content{margin:12px 14px;min-width:190px;padding-right:22px}
+#mapbox .leaflet-container a.leaflet-popup-close-button{width:38px;height:38px;top:-12px;right:-12px;border-radius:50%;background:#3a4560;color:#fff;font:600 22px/36px system-ui;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.5);border:2px solid #1b2235}
 .ph{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
 .ph:first-of-type{border-top:0}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -258,7 +260,7 @@ const DEF={name:'Santiago',admin:'Región Metropolitana',country:'Chile',lat:-33
 const DAY=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'],DAYL=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
 const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],MESL=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 let D=null, TAB='hoy', X={};
-const VER='2026.10.03-7';
+const VER='2026.10.03-8';
 async function getJ(u){const r=await fetch(u);if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}
 function js(src){return new Promise((ok,ko)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=ko;document.head.appendChild(s)})}
 function css(href){return new Promise(ok=>{const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.onload=ok;l.onerror=ok;document.head.appendChild(l)})}
@@ -622,7 +624,7 @@ function baseLayer(k){BASE=k;BASEL.forEach(x=>MAP.removeLayer(x));const o={maxZo
   BASEL.forEach(x=>{x.addTo(MAP);x.bringToBack()});$$('[data-base]').forEach(b=>b.classList.toggle('on',b.dataset.base===k))}
 // Tocar el mapa: acerca a nivel de calle y muestra el clima de ese punto.
 async function focusPoint(ll,name,extra){if(!MAP)return;if(BASE==='oscuro')baseLayer('calles');MAP.flyTo(ll,Math.max(MAP.getZoom(),14),{duration:1.1});
-  const pop=L.popup({maxWidth:260,autoPan:true}).setLatLng(ll).setContent('<div class="pop">Cargando…</div>').openOn(MAP);
+  const pop=L.popup({maxWidth:250,autoPan:true,autoPanPaddingTopLeft:[16,120],autoPanPaddingBottomRight:[60,80]}).setLatLng(ll).setContent('<div class="pop">Cargando…</div>').openOn(MAP);
   try{const [w,g]=await Promise.all([getJ(`https://api.open-meteo.com/v1/forecast?latitude=${ll.lat.toFixed(4)}&longitude=${ll.lng.toFixed(4)}&current=temperature_2m,apparent_temperature,weather_code,is_day,wind_speed_10m,wind_direction_10m,relative_humidity_2m&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&forecast_days=1&timezone=auto`),
       name?null:getJ(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${ll.lat}&longitude=${ll.lng}&localityLanguage=es`).catch(()=>null)]);
     const nm=name||(g&&(g.locality||g.city))||'Punto',ad=g?[g.principalSubdivision,g.countryName].filter(Boolean).join(', '):'',c=w.current;
@@ -637,7 +639,9 @@ async function showMap(mode){mode=mode||(inChile(D.loc)?'gpm':'radar');MAPMODE=m
     MAP=L.map('lmap',{zoomControl:false,attributionControl:true}).setView([l.lat,l.lon],mode==='radar'?7:5);
     MAP.setMaxZoom(19);baseLayer(BASE);
     L.circleMarker([l.lat,l.lon],{radius:8,color:'#fff',weight:2,fillColor:'#ff7a1a',fillOpacity:1}).addTo(MAP).on('click',e=>{L.DomEvent.stopPropagation(e);focusPoint(L.latLng(l.lat,l.lon),l.name)});
-    MAP.on('click',e=>focusPoint(e.latlng));
+    // Con un cuadro abierto, tocar el mapa solo lo cierra; sin cuadro, consulta ese punto.
+    let popAbierto=false,habia=false;MAP.on('popupopen',()=>{popAbierto=true;$('.mapwrap').classList.add('popon')}).on('popupclose',()=>{popAbierto=false;$('.mapwrap').classList.remove('popon')}).on('preclick',()=>habia=popAbierto);
+    MAP.on('click',e=>{if(habia){MAP.closePopup();habia=false;return}focusPoint(e.latlng)});
     box.insertAdjacentHTML('beforeend',`<div class="mtools"><div class="grp">${[['oscuro','Oscuro'],['calles','Calles'],['sat','Satélite']].map(([k,n])=>`<button data-base="${k}" class="${k===BASE?'on':''}">${n}</button>`).join('')}</div><button class="ib" data-mloc="1" aria-label="Mi ubicación"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></button><button class="ib" data-mz="1" aria-label="Acercar">＋</button><button class="ib" data-mz="-1" aria-label="Alejar">－</button></div>`);
     if(FOCUS){const f=FOCUS;FOCUS=null;setTimeout(()=>focusPoint(L.latLng(f[0],f[1]),f[2],f[3]),400)}
     ({radar,gpm,sat,sismos:quakeMap})[mode]();
