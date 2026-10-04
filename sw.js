@@ -1,6 +1,6 @@
 // Caché de la app para abrirla sin conexión. Los datos del clima se guardan aparte (localStorage).
 // La página se pide primero a la red (así cada apertura trae la última versión) y solo sin conexión usa la copia.
-const C = 'cielo-v6';
+const C = 'cielo-v7';
 const SHELL = ['./', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png',
   'https://cdn.jsdelivr.net/npm/suncalc@1.9.0/suncalc.js',
   'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js',

@@ -131,8 +131,10 @@ svg text{font-family:inherit}
 .sheet{position:fixed;inset:0;z-index:60;display:none}
 .sheet.on{display:block}
 .sheet .bd{position:absolute;inset:0;background:rgba(0,0,0,.5);animation:fade .25s}
-.sheet .pn{position:absolute;left:0;right:0;bottom:0;max-height:90dvh;overflow:auto;background:rgba(20,26,42,.94);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border-radius:26px 26px 0 0;padding:8px 16px calc(26px + env(safe-area-inset-bottom));animation:up .32s cubic-bezier(.2,.9,.3,1);border-top:1px solid var(--line)}
+.sheet .pn{position:absolute;left:0;right:0;bottom:0;max-height:calc(82dvh - env(safe-area-inset-top));overflow:auto;overscroll-behavior:contain;background:rgba(20,26,42,.94);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border-radius:26px 26px 0 0;padding:8px 16px calc(26px + env(safe-area-inset-bottom));animation:up .32s cubic-bezier(.2,.9,.3,1);border-top:1px solid var(--line)}
 .sheet .grab{width:40px;height:5px;border-radius:3px;background:rgba(255,255,255,.3);margin:4px auto 10px}
+.sheet .top{position:sticky;top:-8px;z-index:3;margin:-8px -16px 4px;padding:8px 16px 4px;background:rgba(20,26,42,.97);touch-action:none}
+.sheet .x{position:absolute;right:12px;top:8px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.16);color:#fff;font-size:17px;font-weight:600;display:grid;place-items:center;cursor:pointer}
 .sheet h2{margin:0 0 4px;font-size:22px}
 .kv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
 .kv div{background:var(--card2);border-radius:14px;padding:10px 12px}
@@ -241,7 +243,7 @@ nav.tabs button.on svg{color:var(--acc)}
   <button data-tab="mapas"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4z"/><path d="M9 4v14M15 6v14"/></svg>Mapas</button>
   <button data-tab="mas"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></svg>Más</button>
 </nav>
-<div class="sheet" id="sheet"><div class="bd"></div><div class="pn"><div class="grab"></div><div id="sheetIn"></div></div></div>
+<div class="sheet" id="sheet"><div class="bd"></div><div class="pn"><div class="top"><div class="grab"></div><button class="x" aria-label="Cerrar">✕</button></div><div id="sheetIn"></div></div></div>
 <script>
 'use strict';
 /* ============ utilidades ============ */
@@ -256,7 +258,7 @@ const DEF={name:'Santiago',admin:'Región Metropolitana',country:'Chile',lat:-33
 const DAY=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'],DAYL=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
 const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],MESL=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 let D=null, TAB='hoy', X={};
-const VER='2026.10.03-6';
+const VER='2026.10.03-7';
 async function getJ(u){const r=await fetch(u);if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}
 function js(src){return new Promise((ok,ko)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=ko;document.head.appendChild(s)})}
 function css(href){return new Promise(ok=>{const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.onload=ok;l.onerror=ok;document.head.appendChild(l)})}
@@ -737,8 +739,9 @@ function render(){if(!D)return;const c=D.f.current,l=D.loc;setScene(c.weather_co
   document.title=`${T(c.temperature_2m)} ${l.name} · Cielo`;
   try{renderHoy();renderHoras();if(DV_==='lista')renderDias();if(TAB==='mas')renderMas();if(TAB==='mapas')showMap(MAPMODE);if(TAB==='dias'&&DV_!=='lista')renderDias()}catch(e){console.error(e)}renderLocs()}
 function openSheet(h){$('#sheetIn').innerHTML=h;$('#sheet').classList.add('on');$('#sheet .pn').scrollTop=0}
-function closeSheet(){$('#sheet').classList.remove('on')}
-$('#sheet .bd').onclick=closeSheet;
+function closeSheet(){$('#sheet').classList.remove('on');$('#sheet .pn').style.transform=''}
+$('#sheet .bd').onclick=closeSheet;$('#sheet .x').onclick=closeSheet;addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});
+(()=>{const pn=$('#sheet .pn');let y0=null,dy=0;pn.addEventListener('touchstart',e=>{y0=(pn.scrollTop<=0||e.target.closest('.top'))&&innerWidth<700?e.touches[0].clientY:null;dy=0;pn.style.transition='none'},{passive:true});pn.addEventListener('touchmove',e=>{if(y0==null)return;dy=e.touches[0].clientY-y0;if(dy>0){pn.style.transform=`translateY(${dy}px)`;if(e.cancelable)e.preventDefault()}},{passive:false});pn.addEventListener('touchend',()=>{if(y0==null)return;pn.style.transition='transform .2s';if(dy>110){pn.style.transform='translateY(100%)';setTimeout(closeSheet,180)}else pn.style.transform='';y0=null})})();
 $('#btnLocs').onclick=()=>{openSheet(`<h2>Ubicaciones</h2><div class="locs">${locsHTML(X.lt?X.lt.m:{})}</div>`);renderLocs()};
 $('#btnRef').onclick=()=>{load(true);X.lt=null;if(SWR)SWR.update().catch(()=>{})};
 $('#btnShare').onclick=async()=>{if(!D)return;const c=D.f.current,d=D.f.daily,i0=dIdx(),t=`${D.loc.name}: ${T(c.temperature_2m)}, ${wx(c.weather_code)[0].toLowerCase()} (sensación ${T(c.apparent_temperature)}). Hoy máx. ${T(d.temperature_2m_max[i0])}, mín. ${T(d.temperature_2m_min[i0])}, lluvia ${d.precipitation_probability_max[i0]??0}%. ${resumen()}`;
