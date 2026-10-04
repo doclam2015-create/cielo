@@ -9,11 +9,15 @@ App de clima personal para iPhone y iPad (web app instalable), sin publicidad ni
 2. Toca **Compartir** → **Agregar a pantalla de inicio** → **Agregar**.
 3. Se abre a pantalla completa, con su ícono, y funciona sin conexión con los últimos datos.
 
+## App nativa (dentro de ReglaAR)
+Cielo también vive dentro de **ReglaAR** (menú ⋯ → *Cielo · Clima*), para no ocupar otro cupo de la cuenta gratuita de Apple. Incluye el widget **Cielo · Clima** para pantalla de inicio y pantalla bloqueada. El agente «Cielo» de la Villa de agentes (Mac) baja cada 3 h la última versión, publica `volcanes.json` y reinstala ReglaAR cuando cambia la app o antes de que venza el perfil de 7 días.
+
 ## Funciones
 - **Hoy**: temperatura, sensación térmica, máx./mín., comparación con ayer, resumen en lenguaje natural, avisos, lluvia minuto a minuto (15 min), pronóstico por hora, 10 días, viento con brújula, UV, humedad, punto de rocío, presión con tendencia, visibilidad, nubosidad, horas de sol, calidad del aire, salud y actividades, sol y luna, qué ponerse, mar.
 - **Por hora**: 72 h con gráfico (temperatura, sensación, prob. de lluvia, mm, viento, UV, humedad, nubes, presión) y detalle de cada hora.
 - **Días**: 16 días con detalle por día; vista **Mes** (31 días pasados + 16 futuros); **Comparar modelos** (ECMWF, GFS, ICON, Météo-France, JMA, GEM) con consenso y dispersión; **Clima histórico** (normales 30 años, récords del día, climograma).
 - **Mapas**: lluvia medida por satélite (NASA GPM IMERG, cubre Chile), radar animado (RainViewer, sin cobertura en Chile), satélite GOES-East animado, lluvia, viento, temperatura, nubes, ráfagas, presión, olas, rayos en tiempo real y sismos.
+- **Nuevo**: isoterma 0° y línea de nieve, aviso de lluvia en los próximos minutos, comparar ubicaciones lado a lado, actividad volcánica semanal (Smithsonian/USGS), texto grande y alto contraste.
 - **Más**: avisos (calor, heladas, viento, lluvia, nieve, tormentas, UV, aire, regla 30-30-30 de incendios) con enlaces a SENAPRED, DMC y CONAF; calidad del aire con guías OMS 2021 y polen; 20 índices de salud y actividades; índice UV horario; sol y luna completos (crepúsculos, hora dorada, fases); mar y olas; sismos cercanos (USGS); unidades y ajustes.
 - Varias ubicaciones, GPS, búsqueda de ciudades, compartir pronóstico, tirar para actualizar, fondo animado según el clima, diseño adaptado a iPad.
 
