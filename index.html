@@ -128,7 +128,7 @@ svg text{font-family:inherit}
 .leaflet-container{background:#0d1320;font:inherit}
 .leaflet-control-attribution{font-size:9px!important;background:rgba(0,0,0,.45)!important;color:#ccc!important}
 .leaflet-control-attribution a{color:#ddd!important}
-.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#1b2235;color:#fff}
+#mapbox .leaflet-popup-content-wrapper,#mapbox .leaflet-popup-tip{background:#1b2235;color:#fff}
 .sheet{position:fixed;inset:0;z-index:60;display:none}
 .sheet.on{display:block}
 .sheet .bd{position:absolute;inset:0;background:rgba(0,0,0,.5);animation:fade .25s}
@@ -206,7 +206,7 @@ nav.tabs button.on svg{color:var(--acc)}
 .mtools button.on{background:var(--acc);font-weight:600}
 .mtools .ib{width:36px;height:36px;background:rgba(12,18,30,.8)}
 .pop b{font-size:15px}.pop .t{font-size:30px;font-weight:300;line-height:1.1}.pop .btn{padding:7px 10px;font-size:13px;margin-top:8px;width:100%}
-.leaflet-popup-content{margin:12px 14px;min-width:190px;padding-right:22px}
+#mapbox .leaflet-popup-content{margin:12px 14px;min-width:190px;padding-right:22px}
 #mapbox .leaflet-container a.leaflet-popup-close-button{width:38px;height:38px;top:-12px;right:-12px;border-radius:50%;background:#3a4560;color:#fff;font:600 22px/36px system-ui;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.5);border:2px solid #1b2235}
 .ph{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
 .ph:first-of-type{border-top:0}
@@ -260,7 +260,7 @@ const DEF={name:'Santiago',admin:'Región Metropolitana',country:'Chile',lat:-33
 const DAY=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'],DAYL=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
 const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],MESL=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 let D=null, TAB='hoy', X={};
-const VER='2026.10.03-8';
+const VER='2026.10.03-9';
 async function getJ(u){const r=await fetch(u);if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}
 function js(src){return new Promise((ok,ko)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=ko;document.head.appendChild(s)})}
 function css(href){return new Promise(ok=>{const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.onload=ok;l.onerror=ok;document.head.appendChild(l)})}
