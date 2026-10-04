@@ -237,6 +237,7 @@ const DEF={name:'Santiago',admin:'Región Metropolitana',country:'Chile',lat:-33
 const DAY=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'],DAYL=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
 const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],MESL=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 let D=null, TAB='hoy', X={};
+const VER='2026.10.03-3';
 async function getJ(u){const r=await fetch(u);if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}
 function js(src){return new Promise((ok,ko)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=ko;document.head.appendChild(s)})}
 function css(href){return new Promise(ok=>{const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.onload=ok;l.onerror=ok;document.head.appendChild(l)})}
@@ -556,7 +557,7 @@ function renderMas(){const i0=dIdx(),AV_=avisos(),a=D.a&&D.a.current;let H='';
   H+=uvCard();H+=sunCard(i0,true);
   if(D.m){const m=D.m.current,md=D.m.daily;H+=`<div class="card" id="m-mar"><h3>🌊 Mar y olas</h3><div class="kv"><div><small>Altura de olas</small><b>${nf(m.wave_height,1)} m</b></div><div><small>Período</small><b>${nf(m.wave_period,1)} s</b></div><div><small>Dirección</small><b>${dir(m.wave_direction)} (${Math.round(m.wave_direction)}°)</b></div><div><small>Mar de fondo</small><b>${nf(m.swell_wave_height,1)} m</b></div><div><small>Temperatura del agua</small><b>${T(m.sea_surface_temperature)}</b></div></div><table class="tbl" style="margin-top:10px"><tr><th>Día</th><th>Olas máx.</th><th>Período</th><th>Dirección</th></tr>${md.time.map((t,k)=>`<tr><td>${k?wd(t)+' '+dm(t):'Hoy'}</td><td>${nf(md.wave_height_max[k],1)} m</td><td>${nf(md.wave_period_max[k],0)} s</td><td>${dir(md.wave_direction_dominant[k])}</td></tr>`).join('')}</table><p class="dim2 sm">Mareas oficiales: <a href="https://www.shoa.mil.cl/" target="_blank" rel="noopener">SHOA</a>.</p></div>`}
   H+=`<div class="card wide" id="m-sismos"><h3>🌎 Sismos recientes cercanos <button class="more" data-map="sismos" data-tab="mapas">Mapa</button></h3><div id="qlist"><div class="skel" style="height:60px"></div></div></div>`;
-  H+=`<div class="card" id="m-ajustes"><h3>⚙️ Ajustes</h3><div class="dim sm">Temperatura</div><div class="ug">${[['C','°C'],['F','°F']].map(([k,n])=>`<button data-u="t:${k}" class="${S.u.t===k?'on':''}">${n}</button>`).join('')}</div><div class="dim sm">Viento</div><div class="ug">${Object.entries(WU).map(([k,v])=>`<button data-u="w:${k}" class="${S.u.w===k?'on':''}">${v[0]}</button>`).join('')}</div><div class="dim sm">Precipitación</div><div class="ug">${[['mm','mm'],['in','pulgadas']].map(([k,n])=>`<button data-u="p:${k}" class="${S.u.p===k?'on':''}">${n}</button>`).join('')}</div><div class="dim sm">Animaciones de fondo</div><div class="ug"><button data-fx="1" class="${S.fx?'on':''}">Activadas</button><button data-fx="0" class="${S.fx?'':'on'}">Desactivadas</button></div><button class="btn g" id="clr" style="width:100%">Borrar datos guardados</button></div>`;
+  H+=`<div class="card" id="m-ajustes"><h3>⚙️ Ajustes</h3><div class="dim sm">Temperatura</div><div class="ug">${[['C','°C'],['F','°F']].map(([k,n])=>`<button data-u="t:${k}" class="${S.u.t===k?'on':''}">${n}</button>`).join('')}</div><div class="dim sm">Viento</div><div class="ug">${Object.entries(WU).map(([k,v])=>`<button data-u="w:${k}" class="${S.u.w===k?'on':''}">${v[0]}</button>`).join('')}</div><div class="dim sm">Precipitación</div><div class="ug">${[['mm','mm'],['in','pulgadas']].map(([k,n])=>`<button data-u="p:${k}" class="${S.u.p===k?'on':''}">${n}</button>`).join('')}</div><div class="dim sm">Animaciones de fondo</div><div class="ug"><button data-fx="1" class="${S.fx?'on':''}">Activadas</button><button data-fx="0" class="${S.fx?'':'on'}">Desactivadas</button></div><button class="btn g" id="clr" style="width:100%">Borrar datos guardados</button><p class="dim2 sm" style="margin:10px 0 0;text-align:center">Versión ${VER}</p></div>`;
   H+=`<div class="card" id="m-fuentes"><h3>📚 Fuentes</h3><div class="sm" style="line-height:1.6">Pronóstico: <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a> (ECMWF, GFS/NOAA, ICON/DWD, Météo-France, JMA, GEM). Calidad del aire y polen: Copernicus CAMS. Histórico: ERA5. Mar: Open-Meteo Marine. Lluvia satelital: NASA GPM IMERG. Radar: RainViewer (sin cobertura en Chile). Satélite: NASA GIBS (GOES-East). Viento y capas: Windy. Rayos: Blitzortung.org. Sismos: USGS. Geocodificación: Open-Meteo y BigDataCloud. Mapas: Esri, © OpenStreetMap.<br><span class="dim">Uso personal, sin publicidad ni rastreo. Tus ubicaciones se guardan solo en este dispositivo.</span></div></div>`;
   $('#v-mas').innerHTML=`<div class="cards">${H}</div>`;quakeList()}
 function uvCard(){const h=D.f.hourly,date=nowLoc().slice(0,10),ix=[];h.time.forEach((t,k)=>{if(t.startsWith(date)&&+t.slice(11,13)>=6&&+t.slice(11,13)<=20)ix.push(k)});const pr=ix.filter(k=>h.uv_index[k]>=3);
@@ -629,7 +630,7 @@ function openSheet(h){$('#sheetIn').innerHTML=h;$('#sheet').classList.add('on');
 function closeSheet(){$('#sheet').classList.remove('on')}
 $('#sheet .bd').onclick=closeSheet;
 $('#btnLocs').onclick=()=>{openSheet(`<h2>Ubicaciones</h2><div class="locs">${locsHTML(X.lt?X.lt.m:{})}</div>`);renderLocs()};
-$('#btnRef').onclick=()=>{load(true);X.lt=null};
+$('#btnRef').onclick=()=>{load(true);X.lt=null;if(SWR)SWR.update().catch(()=>{})};
 $('#btnShare').onclick=async()=>{if(!D)return;const c=D.f.current,d=D.f.daily,i0=dIdx(),t=`${D.loc.name}: ${T(c.temperature_2m)}, ${wx(c.weather_code)[0].toLowerCase()} (sensación ${T(c.apparent_temperature)}). Hoy máx. ${T(d.temperature_2m_max[i0])}, mín. ${T(d.temperature_2m_min[i0])}, lluvia ${d.precipitation_probability_max[i0]??0}%. ${resumen()}`;
   try{if(navigator.share)await navigator.share({title:'Cielo · '+D.loc.name,text:t});else{await navigator.clipboard.writeText(t);toast('Copiado al portapapeles')}}catch(e){}};
 document.addEventListener('click',async e=>{const t=e.target.closest('[data-tab],[data-day],[data-more],[data-sel],[data-del],[data-add],[data-gps],[data-hm],[data-dv],[data-u],[data-fx],[data-map],[data-sald],.hrow,#clr');if(!t)return;
@@ -656,7 +657,12 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});
 /* ============ inicio ============ */
 setTab('hoy');
 (async()=>{load();if(S.sel==='gps'){const g=await locate();if(g){load();renderLocs()}else if(!S.gps){if(!S.locs.length)S.locs.push(DEF);S.sel=0;save();renderLocs()}}})();
-if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+// Actualización automática: busca versión nueva al abrir, al volver a la app y al tocar actualizar; si hay, recarga sola.
+let SWR=null;
+if('serviceWorker' in navigator){const had=!!navigator.serviceWorker.controller;let rl=false;
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(had&&!rl){rl=true;location.reload()}});
+  navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(r=>{SWR=r;r.update()}).catch(()=>{});
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&SWR)SWR.update().catch(()=>{})})}
 </script>
 </body>
 </html>
