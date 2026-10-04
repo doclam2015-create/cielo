@@ -244,7 +244,7 @@ const DEF={name:'Santiago',admin:'Región Metropolitana',country:'Chile',lat:-33
 const DAY=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'],DAYL=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
 const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],MESL=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 let D=null, TAB='hoy', X={};
-const VER='2026.10.03-4';
+const VER='2026.10.03-5';
 async function getJ(u){const r=await fetch(u);if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}
 function js(src){return new Promise((ok,ko)=>{const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=ko;document.head.appendChild(s)})}
 function css(href){return new Promise(ok=>{const l=document.createElement('link');l.rel='stylesheet';l.href=href;l.onload=ok;l.onerror=ok;document.head.appendChild(l)})}
@@ -679,7 +679,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});
 (()=>{let y0=null,dy=0;const p=$('#ptr');addEventListener('touchstart',e=>{y0=scrollY<=0&&!$('#sheet.on')&&TAB!=='mapas'?e.touches[0].clientY:null;dy=0},{passive:true});addEventListener('touchmove',e=>{if(y0==null)return;dy=e.touches[0].clientY-y0;if(dy>0)p.style.transform=`translate(-50%,${Math.min(dy,150)-150}px) rotate(${dy*3}deg)`},{passive:true});addEventListener('touchend',()=>{if(y0!=null&&dy>90){load(true);X.lt=null}p.style.transform='';y0=null})})();
 
 /* ============ inicio ============ */
-if(EMB){const b=document.createElement('button');b.className='ib';b.setAttribute('aria-label','Volver a ReglaAR');b.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg>';b.onclick=()=>location.href='reglaar://cerrar';$('header.top').prepend(b)}
+if(EMB){const b=document.createElement('button');b.className='ib';b.setAttribute('aria-label','Menú de Horizonte');b.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>';b.onclick=()=>location.href='reglaar://cerrar';$('header.top').prepend(b)}
 setTab('hoy');
 (async()=>{load();if(S.sel==='gps'){const g=await locate();if(g){load();renderLocs()}else if(!S.gps){if(!S.locs.length)S.locs.push(DEF);S.sel=0;save();renderLocs()}}})();
 // Actualización automática: busca versión nueva al abrir, al volver a la app y al tocar actualizar; si hay, recarga sola.

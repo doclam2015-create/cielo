@@ -10,7 +10,7 @@ App de clima personal para iPhone y iPad (web app instalable), sin publicidad ni
 3. Se abre a pantalla completa, con su ícono, y funciona sin conexión con los últimos datos.
 
 ## App nativa (dentro de ReglaAR)
-Cielo también vive dentro de **ReglaAR** (menú ⋯ → *Cielo · Clima*), para no ocupar otro cupo de la cuenta gratuita de Apple. Incluye el widget **Cielo · Clima** para pantalla de inicio y pantalla bloqueada. El agente «Cielo» de la Villa de agentes (Mac) baja cada 3 h la última versión, publica `volcanes.json` y reinstala ReglaAR cuando cambia la app o antes de que venza el perfil de 7 días.
+Cielo también es un módulo de la app nativa **Horizonte** (junto a Regla AR), para no ocupar otro cupo de la cuenta gratuita de Apple. Incluye el widget **Cielo · Clima** para pantalla de inicio y pantalla bloqueada. El agente «Cielo» de la Villa de agentes (Mac) baja cada 3 h la última versión, publica `volcanes.json` y reinstala ReglaAR cuando cambia la app o antes de que venza el perfil de 7 días.
 
 ## Funciones
 - **Hoy**: temperatura, sensación térmica, máx./mín., comparación con ayer, resumen en lenguaje natural, avisos, lluvia minuto a minuto (15 min), pronóstico por hora, 10 días, viento con brújula, UV, humedad, punto de rocío, presión con tendencia, visibilidad, nubosidad, horas de sol, calidad del aire, salud y actividades, sol y luna, qué ponerse, mar.
