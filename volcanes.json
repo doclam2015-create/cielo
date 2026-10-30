@@ -1,93 +1,83 @@
 {
  "fuente": "Smithsonian Institution / USGS — Weekly Volcanic Activity Report",
- "actualizado": "2026-10-13",
+ "actualizado": "2026-10-30",
  "volcanes": [
-  {
-   "nombre": "Ambrym",
-   "pais": "Vanuatu",
-   "periodo": "24 September-30 September 2026",
-   "tipo": "Nueva actividad eruptiva",
-   "texto": "The Vanuatu Meteorology and Geo-Hazards Department (VMGD) reported that the eruption at Ambrym continued during 21-29 September. A thermal anomaly continued to be identified in satellite images, though it was gradually decreasing in intensity. During an overflight on 28 September observers saw an intense glow through weather clouds and from within the volcanic plume in Marum Crater. Closer observations revealed explosive activity ejecting incandescent material high above a vent. The Alert Level remained at 2 (on a scale of 0-5). VMGD warned the public to stay outside of Permanent Danger Zone A",
-   "link": "https://volcano.si.edu/reports_weekly.cfm",
-   "lat": -16.25,
-   "lon": 168.12
-  },
-  {
-   "nombre": "Chikurachki",
-   "pais": "Rusia",
-   "periodo": "24 September-30 September 2026",
-   "tipo": "Nueva actividad eruptiva",
-   "texto": "The Kamchatkan Volcanic Eruption Response Team (KVERT) reported ongoing activity at Chikurachki during 24-30 September. A thermal anomaly was identified in satellite images during 26-27 September; weather clouds obscured views on a few of the days. KVERT noted that explosions had not been detected since 20 September. At 2204 on 28 September the Aviation Color Code was lowered to Yellow (the second lowest level on a four-color scale). Dates are based on UTC; specific events are in local time where noted.",
-   "link": "https://volcano.si.edu/reports_weekly.cfm",
-   "lat": 50.324,
-   "lon": 155.461
-  },
   {
    "nombre": "Krakatau",
    "pais": "Indonesia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Nueva actividad eruptiva",
-   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that two small islands near Krakatau were newly visible after the larger eruption in early September. The continuous eruption during 4-6 September produced lava fountains, widespread ashfall, and lava flows that advanced NW, W, and SW. The deposits changed the W and SW coastlines and increased the size of the island by 32.8 hectares, making the total size of the island 341.5 hectares. Small new islands were observed on 22 September by people visiting and photographing the area. The islands were located approximately 760 m from",
+   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported an increase in low-level eruptive activity at Krakatau starting in early October. During 21 September-9 October seismicity indicating both shallow and deep magmatic processes did not significantly increase. Minor white-to-black ash plumes were occasionally visible in webcam images rising as high as 50 m above the crater, though weather conditions sometimes prevented views. Satellite data indicated low sulfur dioxide emissions as high as 238 tons per day and low-level thermal anomalies. Five eruptive events were recorded during",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": -6.1009,
    "lon": 105.4233
   },
   {
+   "nombre": "Manam",
+   "pais": "Papúa Nueva Guinea",
+   "periodo": "8 October-14 October 2026",
+   "tipo": "Nueva actividad eruptiva",
+   "texto": "The Darwin Volcanic Ash Advisory Centre (VAAC) reported that ash plumes from Manam rose to 2.1 km (7,000 ft) a.s.l. and drifted E, NE, N, and NW during 8-9 and 11-13 October.",
+   "link": "https://volcano.si.edu/reports_weekly.cfm",
+   "lat": -4.08,
+   "lon": 145.037
+  },
+  {
    "nombre": "Marapi",
    "pais": "Indonesia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Nueva actividad eruptiva",
-   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that an eruptive event at Marapi (on Sumatra) was recorded at 2140 on 26 September. Webcam views were obscured by weather conditions. According to news reports the event was accompanied by loud booms and rumbling sounds, generated an ash plume that rose 1 km above the summit, and ejected incandescent material onto the upper flanks based on video and eye-witness accounts posted on social media by residents. Ashfall was reported in Bukittinggi City; a resident posted a video of ashfall at 2257 on attendees at an outdoor concert.",
+   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that activity at Marapi (on Sumatra) continued during 8-14 October. An eruptive event was recorded at 0002 on 13 October by the seismic network but not visually observed due to weather conditions. The Alert Level remained at 2 (on a scale of 1-4) and the public was warned to stay 3 km away from the active crater.",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": -0.38,
    "lon": 100.474
   },
   {
-   "nombre": "Masaya",
-   "pais": "Nicaragua",
-   "periodo": "24 September-30 September 2026",
-   "tipo": "Nueva actividad eruptiva",
-   "texto": "The Washington Volcanic Ash Advisory Center (VAAC) reported that during 1230-1400 on 28 September diffuse ash plumes from Masaya were visible in satellite and webcam images rising to 2.1-2.4 km (7,000-8,000 ft) a.s.l. and drifting over 22 km W and NW.",
-   "link": "https://volcano.si.edu/reports_weekly.cfm",
-   "lat": 11.9844,
-   "lon": -86.1688
-  },
-  {
    "nombre": "Nevados de Chillan",
    "pais": "Chile",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Nueva actividad eruptiva",
-   "texto": "The Servicio Nacional de Geología y Minería (SERNAGEOMIN) and the Servicio Geológico Minero Argentino (SEGEMAR) reported increasing activity at Nevados de Chillán in late September, particularly at Emission Center 3 (EC3) on the W margin of the summit complex. Seismicity indicated 1-3 daily explosions and possible ash plumes during 23-26 September, but weather conditions prevented visual confirmation on most days; an explosion at 2320 on 25 September produced an ash plume that rose 700 m above the summit and drifted SE. On 23 September the Sistema y Servicio Nacional de Prevención y Repuesta A",
+   "texto": "The Servicio Nacional de Geología y Minería (SERNAGEOMIN) and the Servicio Geológico Minero Argentino (SEGEMAR) reported that eruptive activity at Nevados de Chillán was ongoing in mid-October. A new lava flow was first visible at the summit of Nuevo volcano on 29 September and traveled SW. During a field visit on 1 October scientists observed the ejection of meter-sized blocks as high as 500 m above the summit and outward as far as 250 m. The blocks landed on the flanks and rolled up to 400 m from the crater rim. During 8-14 October activity was characterized by periodic long-period earthquak",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": -36.868,
    "lon": -71.378
   },
   {
-   "nombre": "Sangay",
-   "pais": "Ecuador",
-   "periodo": "24 September-30 September 2026",
-   "tipo": "Nueva actividad eruptiva",
-   "texto": "The Instituto Geofísico-Escuela Politécnica Nacional (IG-EPN) reported that volcanic activity at Sangay continued during 23-30 September. The seismic network recorded 1-14 daily explosions, a few long-period earthquakes, a period of harmonic tremor, and 0-6 daily signals indicating emissions. Daily ash-and-gas plumes visible in webcam views and satellite images, and those reported by the Washington Volcanic Ash Advisory Center, rose as high as 1.5 km above the crater rim and drifted in multiple directions, though mainly NW and W. During dark hours incandescence at the summit was visible along ",
-   "link": "https://volcano.si.edu/reports_weekly.cfm",
-   "lat": -2.005,
-   "lon": -78.341
-  },
-  {
    "nombre": "Aira",
    "pais": "Japón",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Japan Meteorological Agency (JMA) reported ongoing eruptive activity at Minamidake Crater (Aira Caldera?s Sakurajima volcano) during 14-21 September. Crater incandescence was visible in nighttime webcam images during 14-18 September. Volcanologists conducted a field survey on 15 September and measured high sulfur dioxide emissions, averaging 2,600 tons per day. A total of 32 eruptive events during the week produced ash plumes that rose as high as 2.5 km above the crater and ejected large blocks 600 m from the vent. The Alert Level remained at 3 (on a 5-level scale), and the public was warn",
+   "texto": "The Japan Meteorological Agency (JMA) reported ongoing eruptive activity at Minamidake Crater (Aira Caldera?s Sakurajima volcano) during 5-12 October. Crater incandescence was visible in nighttime webcam images during 5-9 October. A total of 15 eruptive events during 5-8 October produced ash plumes that rose 1-1.6 km above the crater and drifted in various directions. The Alert Level remained at 3 (on a 5-level scale), and the public was warned to be cautious within 1 km of both the Minimadake and Showa craters.",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 31.5772,
    "lon": 130.6589
   },
   {
+   "nombre": "Bezymianny",
+   "pais": "Rusia",
+   "periodo": "8 October-14 October 2026",
+   "tipo": "Actividad eruptiva continua",
+   "texto": "The Kamchatkan Volcanic Eruption Response Team (KVERT) reported that effusive activity at Bezymianny continued during 8-14 October. A thermal anomaly was identified in satellite images on most days; the volcano was occasionally obscured by weather clouds. Dates and times are provided in Coordinated Universal Time (UTC); events are in local time only where specified.",
+   "link": "https://volcano.si.edu/reports_weekly.cfm",
+   "lat": 55.972,
+   "lon": 160.595
+  },
+  {
+   "nombre": "Dukono",
+   "pais": "Indonesia",
+   "periodo": "8 October-14 October 2026",
+   "tipo": "Actividad eruptiva continua",
+   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that eruptive activity at Dukono continued during 8-14 October, though hazy conditions prevented visual observations. Eruptive events were recorded by the seismic network during 8 and 10-12 October. Faint rumbling was heard at the Dukono observation post (11 km N) on 10 October. The Alert Level remained at Level 2 (on a scale of 1-4) and the public was warned to stay 4 km away from the Malupang Warirang Crater.",
+   "link": "https://volcano.si.edu/reports_weekly.cfm",
+   "lat": 1.6992,
+   "lon": 127.8783
+  },
+  {
    "nombre": "Etna",
    "pais": "Italia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Sezione di Catania - Osservatorio Etneo (INGV) reported that eruptive activity at Etna?s summit craters during 21-27 September was characterized by gas emissions at the summit craters and periodic ash emissions at Northeast Crater (NEC). Ash emissions at NEC increased on 24 September and were reddish-brown in color. The plume rose about 4 km (13,000 ft) a.s.l., or about 650 m above the summit, and caused minor ashfall downwind on the SE flank as far as the coast (around 20 km). During the late afternoon of 28 September ash emissions were variable and at times very diffuse. The volcano Aler",
+   "texto": "The Sezione di Catania - Osservatorio Etneo (INGV) reported that eruptive activity at Etna?s summit craters during 5-11 October was characterized by gas emissions at the summit craters and periodic minor ash emissions at Northeast Crater (NEC). Adverse weather conditions often prevented visual observations. The volcano Alert Level remained at Yellow (the second lowest level on a four-level scale) according to the Dipartimento della Protezione Civile.",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 37.748,
    "lon": 14.999
@@ -95,9 +85,9 @@
   {
    "nombre": "Fuego",
    "pais": "Guatemala",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Instituto Nacional de Sismología, Vulcanologia, Meteorologia e Hidrología (INSIVUMEH) reported that eruptive activity at Fuego continued during 23-30 September. Daily explosions recorded by the seismic network, at rates of 1-7 per hour, generated gas-and-ash plumes that rose as high as 1.2 km above the summit and mainly drifted as far as 40 km W, NW, and N, and occasionally to the SE. Explosions produced shock waves and rumbling sounds that were reported daily. Explosions often ejected incandescent material, sometimes as high as 300 m above the summit, and onto the flanks causing incandesc",
+   "texto": "The Instituto Nacional de Sismología, Vulcanologia, Meteorologia e Hidrología (INSIVUMEH) reported that eruptive activity at Fuego continued during 6-14 October. Daily explosions recorded by the seismic network, at rates of 2-8 per hour, generated gas-and-ash plumes that rose as high as 1.1 km above the summit and mainly drifted as far as 40 km in various directions. Shock waves and rumbling sounds from explosions were reported almost daily. Explosions also often ejected incandescent material, sometimes as high as 300 m above the summit, and onto the flanks causing incandescent block avalanche",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 14.4748,
    "lon": -90.8806
@@ -105,9 +95,9 @@
   {
    "nombre": "Great Sitkin",
    "pais": "EE.UU.",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Alaska Volcano Observatory (AVO) reported that slow lava effusion continued to feed a thick flow in Great Sitkin?s summit crater that advanced E during 16-23 September based on webcam and satellite images. Minor earthquakes consistent with the growth of the lava dome and occasional rockfalls were detected by the seismic network on a few of the days. Weather clouds obscured webcam and satellite views during most of the week, though steaming at the summit area was visible in satellite images during 27-28 September. The Volcano Alert Level remained at Watch (the third level on a four-level sc",
+   "texto": "The Alaska Volcano Observatory (AVO) reported that slow lava effusion continued to feed a thick flow in Great Sitkin?s summit crater that advanced SE during 7-14 October based on webcam and satellite images. Minor earthquakes consistent with the growth of the lava dome and occasional rockfalls were detected by the seismic network. Weather clouds obscured webcam and satellite views during most of the week, though elevated surface temperatures were identified in satellite images during 7-8 October. The Volcano Alert Level remained at Watch (the third level on a four-level scale) and the Aviation",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 52.076,
    "lon": -176.13
@@ -115,19 +105,29 @@
   {
    "nombre": "Ibu",
    "pais": "Indonesia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that activity at Ibu continued during 24-30 September, with daily eruptive events recorded by the seismic network. Gray ash plumes rose 200-600 m above the summit and drifted N and NE on most days; weather conditions obscured views on 27 September. Incandescence at the summit and on the flanks was visible in a few webcam images. The Alert Level remained at 2 (the second lowest level on a four-level scale) and the public was advised to stay 2 km away from the active crater and 3.5 km away from the N crater wall opening.",
+   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that activity at Ibu continued during 1-7 October, with daily eruptive events recorded by the seismic network. Daily gray or white-to-gray ash plumes rose 200-800 m above the summit and drifted in multiple directions. The Alert Level remained at 2 (the second lowest level on a four-level scale) and the public was advised to stay 2 km away from the active crater and 3.5 km away from the N crater wall opening.",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 1.4941,
    "lon": 127.6324
   },
   {
+   "nombre": "Kanlaon",
+   "pais": "Filipinas",
+   "periodo": "8 October-14 October 2026",
+   "tipo": "Actividad eruptiva continua",
+   "texto": "The Philippine Institute of Volcanology and Seismology (PHIVOLCS) reported continuing eruptive activity at Kanlaon during 7-14 October. The seismic network recorded 0-19 daily volcanic earthquakes and during 11-13 October 5-6 daily periods of volcanic tremor lasting 2-64 minutes. In general, sulfur dioxide emissions ranged from 932 to 3,219 tonnes per day (t/d), though a peak of 4,656 t/d was recorded on 10 October, the same day as a larger eruptive event. Moderate-to-voluminous volcanic emissions generally rose as high as 1.2 km above the summit and drifted in various directions. A moderately",
+   "link": "https://volcano.si.edu/reports_weekly.cfm",
+   "lat": 10.4096,
+   "lon": 123.13
+  },
+  {
    "nombre": "Karangetang",
    "pais": "Indonesia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that the eruption at Karangetang?s North Crater (Kawah Dua) continued during 24-30 September. White plumes rose as high as 700 m above the summit and drifted in various directions on most days; white-and-gray plumes rose 20 m and drifted in different directions on 25 and 27 September. Incandescence at the North Crater and from lava flows and/or incandescent avalanches on the flanks was visible in some webcam images throughout the week. Rumbling sounds were noted on most days. At 1807 on 30 September a dense white-and-gray ash ",
+   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that the eruption at Karangetang?s North Crater (Kawah Dua) continued during 8-14 October. White plumes rose as high as 20 m above the summit and drifted in various directions on most days. At 1402 on 11 October a white-and-gray ash plume rose 700 m above the summit and drifted W and NW. Nearly an hour later, at 1459, a white, gray, and brown ash plume rose 700 m above the summit and drifted W and NW. Faint rumbling was heard on 12 October, though no emissions were recorded. Incandescent avalanches on the flanks were visible i",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 2.781,
    "lon": 125.407
@@ -135,9 +135,9 @@
   {
    "nombre": "Kilauea",
    "pais": "EE.UU.",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Hawaiian Volcano Observatory (HVO) reported that the eruption within Kilauea?s Kaluapele summit caldera, characterized by incandescence, intermittent spatter, and lava flows from craters and vents along the SW and W margins of Halema`uma`u Crater, continued at variable levels during 24-30 September. Incandescence and flaming continued at the N, W, and S vents, with intermittent spatter bursts from all of the vents. After about 10 days of quiescence at the vent complex overflows at the N vent began at 2210 on 22 September; by evening on 28 September the vent had overflowed 85 times. Many of",
+   "texto": "The Hawaiian Volcano Observatory (HVO) reported that the eruption within Kilauea?s Kaluapele summit caldera, characterized by incandescence, intermittent spatter, and lava flows from vents along the SW and W margins of Halema`um`u Crater, continued at variable levels during 7-14 October. Incandescence and flaming continued to be visible at the N and S vents during 6-11 October, with periodic spattering at the N vent. Robust volcanic gas plumes rose from both vents in daytime webcam views. Several small lava overflows from a small vent at the base of N vent were observed during 9-10 October. Th",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 19.421,
    "lon": -155.287
@@ -145,19 +145,29 @@
   {
    "nombre": "Lewotolok",
    "pais": "Indonesia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported continuing eruptive activity at Lewotolok during 24-30 September. Gray ash plumes rose 400-700 m above the summit and drifted NW and W almost daily; white plumes rose 300 m above the summit on 28 September. An active lava flow on the SE flank was 500 m long. Several webcam images showed incandescent material being ejected above the summit and onto the flanks. The Alert Level remained at 2 (on a scale of 1-4). The public was warned to stay 2 km away from the summit with an extension to 3 km on the S and SE flanks.",
+   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported continuing eruptive activity at Lewotolok during 8-14 October. On 8 and 11 October dense gray ash plumes rose around 500 m above the summit and drifted W and NW, and white steam-and-gas plumes rose 100 m above the summit and also drifted W and NW on 9, 12, and 14 October; no emissions were recorded on 10 and 13 October. Active lava flows on the S and SE flanks were 400-600 m long. The Alert Level remained at 2 (on a scale of 1-4). The public was warned to stay 2 km away from the summit with an extension to 3 km on the S and SE",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": -8.274,
    "lon": 123.508
   },
   {
+   "nombre": "Masaya",
+   "pais": "Nicaragua",
+   "periodo": "8 October-14 October 2026",
+   "tipo": "Actividad eruptiva continua",
+   "texto": "The Washington Volcanic Ash Advisory Center (VAAC) reported that on 9 October ash plumes from Masaya were visible in webcam images rising to 1.2-1.5 km (4,000-5,000 ft) a.s.l. and drifting SW and W. Weather clouds blocked satellite views.",
+   "link": "https://volcano.si.edu/reports_weekly.cfm",
+   "lat": 11.9844,
+   "lon": -86.1688
+  },
+  {
    "nombre": "Mayon",
    "pais": "Filipinas",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Philippine Institute of Volcanology and Seismology (PHIVOLCS) reported ongoing activity at Mayon during 23-29 September. The seismic network recorded 8-22 daily volcanic earthquakes; one rockfall was recorded on both 23 and 24 September. Sulfur dioxide emissions generally averaged 692-1,249 tonnes per day. Daily emissions rose 500-900 m above the crater and drifted in different directions. One ash emission lasting one minute was recorded on 23 September. Minor Strombolian activity was observed on 26 September. The Alert Level remained at 2 (on a 0-5 scale) and the public was reminded to st",
+   "texto": "The Philippine Institute of Volcanology and Seismology (PHIVOLCS) reported ongoing eruptive activity at Mayon during 7-14 October. The seismic network recorded 6-14 daily volcanic earthquakes. Sulfur dioxide emissions generally averaged 905-1,474 tonnes per day. Daily emissions rose 100-900 m above the crater and drifted WNW, WSW, and SW. Minor Strombolian activity at 0318 on 11 October generated an ash plume that rose 500 m above the summit and drifted WNW. The Alert Level remained at 2 (on a 0-5 scale) and the public was reminded to stay away from the 6-km-radius Permanent Danger Zone (PDZ).",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 13.257,
    "lon": 123.685
@@ -165,39 +175,39 @@
   {
    "nombre": "Merapi",
    "pais": "Indonesia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that the eruption at Merapi (on Java) continued during 24-30 September with lava avalanches produced by the active lava dome on the upper SW flank. The seismic network recorded up to three lava avalanches per day that traveled as far as 2.5 km down the Sat/Putih drainage on the SW flank and the Boyong drainage on the S flank. The Alert Level remained at 3 (on a scale of 1-4), and the public was warned to stay 3-7 km away from the summit, based on location.",
+   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that the eruption at Merapi (on Java) continued during 8-14 October with avalanches produced by the active lava dome on the upper SW flank. The seismic network recorded multiple lava avalanches per day on most days that traveled as far as 2 km down the Sat/Putih, Bebeng, and Krasak drainages on the SW flank and the Boyong drainage on the S flank. The Alert Level remained at 3 (on a scale of 1-4), and the public was warned to stay 3-7 km away from the summit, based on location.",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": -7.54,
    "lon": 110.446
   },
   {
+   "nombre": "Popocatepetl",
+   "pais": "México",
+   "periodo": "8 October-14 October 2026",
+   "tipo": "Actividad eruptiva continua",
+   "texto": "The Centro Nacional de Prevención de Desastres (CENAPRED) reported that eruptive activity was low at Popocatépetl during 7-14 October. The seismic network recorded 19-42 long-period events per day, accompanied by steam-and-gas emissions that drifted in multiple directions; the emissions contained small amounts of ash on a few of the days. The seismic network also detected one volcano-tectonic earthquake per day on 9, 11, and 13 October. According to the Washington Volcanic Ash Advisory Center (VAAC) ash plumes were visible in webcam and satellite images during 12-14 October rising 6.1-7.3 km (",
+   "link": "https://volcano.si.edu/reports_weekly.cfm",
+   "lat": 19.023,
+   "lon": -98.622
+  },
+  {
    "nombre": "Purace",
    "pais": "Colombia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Servicio Geologico Colombiano (SGC) reported decreasing eruptive activity at Puracé by the end of September. Thermal anomalies generated by high-temperature gas emissions had decreased to low levels. Sulfur dioxide emissions did not significantly increase nor show abrupt variations, and carbon dioxide emission levels significantly decreased during the past two weeks. Starting on 15 September there was a notable decrease in the frequency and energy of ash emissions; 2-3 daily ash emissions rose as high as 600 m above the summit when seen during 26-28 September. Seismic energy associated wit",
+   "texto": "The Washington Volcanic Ash Advisory Center (VAAC) reported that during 8-14 October daily ash plumes from Puracé rose to 5.1-6.1 km (17,000-20,000 ft) a.s.l., or as high as 1.4 km above the summit, and drifted NW, WNW, and SW based on webcam images, satellite images, weather models, and Volcano Observatory Notices to Aviation issued by the Servicio Geológico Colombiano (SGC). Emissions on 13 October were considered likely, but were not detected due to weather conditions. The Alert Level remained at Yellow (the second lowest level on a four-color scale).",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 2.3095,
    "lon": -76.3948
   },
   {
-   "nombre": "Reventador",
-   "pais": "Ecuador",
-   "periodo": "24 September-30 September 2026",
-   "tipo": "Actividad eruptiva continua",
-   "texto": "The Instituto Geofísico-Escuela Politécnica Nacional (IG-EPN) reported that eruptive activity at Reventador continued at a high level during 23-30 September. Seismicity included 74-97 daily explosions, long-period earthquakes, harmonic tremor, and tremor associated with emissions. Daily ash-and-gas plumes were visible in webcam images and reported by the Washington Volcanic Ash Advisory Center rising as high as 1.3 km above the crater rim and drifting NW, WNW, and W. Incandescent blocks were visible during dark hours each day rolling as far as 1.1 km down the flanks. Secretaría de Gestión de R",
-   "link": "https://volcano.si.edu/reports_weekly.cfm",
-   "lat": -0.077,
-   "lon": -77.656
-  },
-  {
    "nombre": "Sabancaya",
    "pais": "Perú",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Instituto Geofísico del Perú?s (IGP) Centro Vulcanológico Nacional (CENVUL) reported continuing eruptive activity at Sabancaya during 21-27 September. The seismic network detected 42 seismic events associated with the movement of magmatic fluids, along with earthquakes indicating internal rock fracturing; no volcanic explosions occurred during the period. Gas, steam, and ash emissions periodically rose as high as 1.5 km above the summit and drifted less than 10 km W. Moderate sulfur dioxide (SO?) emissions averaged 581 tons per day, and 13 thermal anomalies (each 2 MW or less) associated w",
+   "texto": "The Instituto Geofísico del Perú?s (IGP) Centro Vulcanológico Nacional (CENVUL) reported continuing eruptive activity at Sabancaya during 5-11 October. The seismic network detected 18 seismic events associated with the movement of magmatic fluids, along with earthquakes indicating internal rock fracturing; no volcanic explosions occurred during the period. Gas, steam, and ash emissions periodically rose as high as 800 m above the summit and drifted less than 10 km NE and E. Moderate sulfur dioxide emissions averaged 865 tons per day, and 12 thermal anomalies (each 1 MW or less) associated with",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": -15.787,
    "lon": -71.857
@@ -205,9 +215,9 @@
   {
    "nombre": "Santa Maria",
    "pais": "Guatemala",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Instituto Nacional de Sismología, Vulcanología, Meteorología e Hidrología (INSIVUMEH) reported ongoing eruptive activity at Santa Maria?s Santiaguito dome complex during 23-30 September, with continuing lava extrusion at Caliente dome. Incandescence at the summit was observed during dark hours. Effusion of blocky lava and collapses of material produced daily incandescent block avalanches that descended the flanks, particularly the W, SW, and S flanks. Daily explosions, 0-3 per hour when reported, generated gas-and-ash plumes that rose as high as 1.3 km above the dome and drifted SW, W, and",
+   "texto": "The Instituto Nacional de Sismología, Vulcanología, Meteorología e Hidrología (INSIVUMEH) reported ongoing eruptive activity at Santa Maria?s Santiaguito dome complex during 7-14 October, with continuing lava extrusion at Caliente dome. Incandescence at the summit was observed during dark hours. Effusion of blocky lava and collapses of material produced daily incandescent block avalanches that descended the flanks, particularly the W, SW, and S flanks; during 7-8 and 11-12 October these collapses generated short pyroclastic flows that reached the base on the cone. Daily explosions, 0-3 per hou",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 14.757,
    "lon": -91.552
@@ -215,9 +225,9 @@
   {
    "nombre": "Semeru",
    "pais": "Indonesia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that activity continued at Semeru during 24-30 September, with daily eruptive events recorded by the seismic network. Daily white-to-gray ash plumes rose 300-1,300 m above the summit and drifted in multiple directions. The Alert Level remained at 3 (the second highest level on a scale of 1-4) and the public was warned to stay at least 5 km away from the Jonggring Saloko Crater in all directions, 13 km from the summit on the SE flank along the Kobokan drainage, and 500 m from the banks of the Kobokan drainage as far as 17 km SE",
+   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that activity continued at Semeru during 8-14 October, with daily eruptive events recorded by the seismic network. White-to-gray or gray ash plumes rose 300-1,000 m above the summit and drifted in multiple directions on most days; emissions were not visible due to weather conditions on 8 and 10 October. The Alert Level remained at 3 (the second highest level on a scale of 1-4) and the public was warned to stay at least 5 km away from the Jonggring Saloko Crater in all directions, 13 km from the summit on the SE flank along the",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": -8.108,
    "lon": 112.922
@@ -225,9 +235,9 @@
   {
    "nombre": "Sheveluch",
    "pais": "Rusia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Kamchatkan Volcanic Eruption Response Team (KVERT) reported continuing lava effusion and explosive activity at the lava domes along the N crater floor of Young Sheveluch (on the SW flank of Old Sheveluch) during 24-30 September. A thermal anomaly was identified in satellite images on most days; weather clouds occasionally obscured views. An explosion at 1750 on 25 September generated ash plumes that rose 10.5 km (34,400 ft) a.s.l. and drifted 300 km W. Minor ashfall was reported in Klyuchi (50 km SW) according to the Institute of Volcanology and Seismology (IVS) of the Far Eastern Branch o",
+   "texto": "The Kamchatkan Volcanic Eruption Response Team (KVERT) reported continuing lava effusion and explosive activity at the lava domes along the N crater floor of Young Sheveluch (on the SW flank of Old Sheveluch) during 7-14 October. A thermal anomaly was identified in satellite images on a few of the days; weather clouds occasionally obscured views. The Aviation Color Code remained at Orange (the second highest level on a four-color scale). Dates are based on UTC; specific events are in local time where noted.",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 56.653,
    "lon": 161.36
@@ -235,22 +245,32 @@
   {
    "nombre": "Stromboli",
    "pais": "Italia",
-   "periodo": "24 September-30 September 2026",
+   "periodo": "8 October-14 October 2026",
    "tipo": "Actividad eruptiva continua",
-   "texto": "The Sezione di Catania - Osservatorio Etneo (INGV) reported that eruptive activity continued at Stromboli during 21-27 September. Webcam images showed Strombolian activity from vents in Area N within the upper part of the Sciara del Fuoco, and vents in Area C-S (South-Central Crater) on the crater terrace. Explosions at Area N ejected lapilli and bombs above the vents and explosions at Area C-S ejected both fine and coarse tephra above the vents. The daily frequency of explosions at both vents was at medium-to-high levels and the intensity of the explosions was generally at low levels. The Ale",
+   "texto": "The Sezione di Catania - Osservatorio Etneo (INGV) reported that eruptive activity continued at Stromboli during 5-11 October. Webcam images showed Strombolian activity from vents in Area N within the upper part of the Sciara del Fuoco, and vents in Area C-S (South-Central Crater) on the crater terrace. Explosions at Area N ejected lapilli and bombs above the vents and explosions at Area C-S ejected both fine and coarse tephra above the vents. The daily frequency of explosions at both vents was at medium level and the intensity of the explosions was generally at low levels. Lava overflowed ven",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
    "lat": 38.789,
    "lon": 15.213
   },
   {
-   "nombre": "Papandayan",
-   "pais": "Indonesia",
-   "periodo": "24 September-30 September 2026",
-   "tipo": "Otras observaciones",
-   "texto": "The Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) reported that blue flames at the Manifestasi Panas Baru site at Papandayan?s Manuk Crater were visible during the early hours of 24 September. The blue flames suggested intense temperatures and combustion of surface materials; a powdery residue resembling combustion ash was observed near the site. Thermal activity at the site had been decreasing. There were no significant changes to gas emission ratios, though significant volcanic gas emissions continued to be detected. A strong sulfur odor was detected in areas downwind. Blue flames w",
+   "nombre": "Suwanosejima",
+   "pais": "Japón",
+   "periodo": "8 October-14 October 2026",
+   "tipo": "Actividad eruptiva continua",
+   "texto": "The Japan Meteorological Agency (JMA) reported that eruptive activity at Suwanosejima's Ontake Crater during 7-8 October produced ash plumes that rose as high as 400 m above the crater rim. The activity was the first recorded since 25 July. The Alert Level remained at 2 (the second level on a five-level scale) and the public was warned to be cautious within 1.5 km of the crater.",
    "link": "https://volcano.si.edu/reports_weekly.cfm",
-   "lat": -7.3175,
-   "lon": 107.7306
+   "lat": 29.638,
+   "lon": 129.714
+  },
+  {
+   "nombre": "Taal",
+   "pais": "Filipinas",
+   "periodo": "8 October-14 October 2026",
+   "tipo": "Actividad eruptiva continua",
+   "texto": "The Philippine Institute of Volcanology and Seismology (PHIVOLCS) reported eruptive activity at Taal during 6-12 October. The seismic network recorded 0-34 daily volcanic earthquakes, including 1-9 periods of volcanic tremor each day during 7-10 October, with periods lasting between 2 and 82 minutes. Daily gas-and-steam emissions generally rose 600-1,500 m above the crater rim and drifted W, SW, and SE. Sulfur dioxide emissions averaged 952-3,071 tonnes per day during 6 and 8-10 October. A minor phreatomagmatic eruption at 1806 on 8 October generated a dark ash plume that rose 4 km above the c",
+   "link": "https://volcano.si.edu/reports_weekly.cfm",
+   "lat": 14.0106,
+   "lon": 120.9975
   }
  ]
 }
